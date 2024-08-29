@@ -1,0 +1,206 @@
+/* Mobile first approach */
+* {
+    /* Default styles for mobile */
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.hideOnMobile{
+    display: none;
+}
+body{
+    min-height: 100vh;
+}
+.nav-list{
+    display: none;
+}
+nav{
+    display:flex ;
+    justify-content: space-between;
+    max-height: 64px;
+    margin: 10px 20px;
+}
+nav li{
+    list-style: none;
+    font-family: "Inter", system-ui;
+    font-weight: 500;
+}
+nav li a{
+    text-decoration: none;
+    color: #001D5D;
+    
+}
+
+
+.sidebar{
+    padding-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1) ;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+  margin-bottom: 20px; /* Optional: Adds spacing between list items */
+}
+.sidebar a {
+    display: block; /* Ensure the anchor tag takes up the full width of the list item */
+    width: 100%;
+    padding: 10px 0; /* Add padding for better spacing */
+    text-decoration: none;
+    color: #001D5D;
+    font-weight: 500;
+    font-family: "Inter", system-ui;
+}
+
+.sidebar img.nav-img {
+    margin-bottom: 20px; /* Add some space below the logo image */
+}
+
+
+
+.heroSection{
+    min-height: 720px;
+background-image: url(/assets/Images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg);
+background-size: cover;
+background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablets */
+@media (min-width: 768px) {
+    body {
+        /* Styles for tablets */
+    }
+}
+
+/* Small Desktops */
+@media (min-width: 992px) {
+    body {
+        /* Styles for small desktops */
+
+    }
+
+
+
+
+
+
+}
+
+/* Large Desktops */
+@media (min-width: 1200px) {
+    body {
+        /* Styles for large desktops */
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+            font-family: "Inter", system-ui;
+        }
+        .nav-img{
+            margin-right: 20px;
+        }
+        
+        .nav-list {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            gap: 80px;
+            margin: 0;
+            list-style: none; /* Remove default list styling */
+        }
+        
+        .nav-list li {
+            display: flex;
+            align-items: center; /* Center image and text vertically */
+            gap: 8px; /* Adjust gap between image and text */
+            color:#001D5D;
+            font-size: 1rem;
+            
+        }
+        .nav-list li::before{
+            filter: invert(9%) sepia(38%) saturate(6771%) hue-rotate(213deg) brightness(93%) contrast(108%); /*Found this filter property to be the best way to change list-style-type icons based off how my html is set   */
+        
+        }
+        
+        .nav-list .home::before {
+            content: url(/assets/Icons/Nav-Icons/Home.svg);
+            display: inline-block;
+        }
+        
+        .nav-list .records::before {
+            content: url(/assets/Icons/Nav-Icons/Record.svg);
+            display: inline-block;
+        }
+        
+        .nav-list .music::before {
+            content: url(/assets/Icons/Nav-Icons/Music\ Note.svg);
+            display: inline-block;
+        }
+        
+        .nav-list .artists::before {
+            content: url(/assets/Icons/Nav-Icons/People.svg);
+            display: inline-block;
+        }
+        
+        .nav-list .concerts::before {
+            content: url(/assets/Icons/Nav-Icons/Calendar.svg);
+            display: inline-block;
+        }
+        
+        .nav-button {
+            display: block;
+            border: none;
+            height: 40px;
+            width: 100%;
+            min-width: 100px;
+            max-width: 168px;
+            margin-left: 20px; /* Adjust spacing as needed */
+            font-family: "Inter", system-ui;
+            color: #42A418;
+            font-weight: 500;
+            background-color: #D9F0D0;
+        }
+        
+    }
+    .hideOnDesk{
+        display:none;
+    }
+}
+
+/* Extra Large Desktops */
+@media (min-width: 1440px) {
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+}
