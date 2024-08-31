@@ -254,6 +254,70 @@ background-position: center;
 
 /* -----------------------------END OF ABOUT SECTION------------------------------*/
 
+
+/* -----------------------------START OF BANNER SECTION------------------------------*/
+.banner{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    max-height: 220px;
+    background-color: #F6F6F6;
+    gap: 24px;
+}
+
+.banner h1{
+    color: #001D5D;
+    font-family: "Inter", system-ui;
+    font-weight: 700px;
+    font-size: 40px;
+    line-height: 48px;
+    overflow: hidden;
+    max-width:569px ;
+    text-align: center;
+}
+.banner p{
+    font-family: "Inter", system-ui;
+    font-weight: 400;
+    font-size:1.13rem ;
+    max-width:569px ;
+    line-height: 26px;
+    text-align: center;
+    color:#777777;
+
+}
+
+/* -----------------------------END OF BANNER SECTION------------------------------*/
+
+
+
+/* -----------------------------START OF CARD SECTION------------------------------*/
+
+.swiper {
+    height:300px;
+    max-width: 600px;
+    max-height: 300px;
+    background-color: yellow;
+  }
+
+  .swiper-slide{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+
+
+
+
+
+
+/* -----------------------------END OF CARD SECTION------------------------------*/
+
+
 @media (max-width: 996px) { /* -------- THIS IS ONLY BEING USED TO EFFECTIVELY HIDE MY NAVIGATION BUTTON, RAN INTO ISSUE WHERE THE BUTTON WAS HIDING AT ALL BREAKPOINTS DUE TO THE BUTTON STYLE HAVING THE DISPLAY BLOCK VALUE    ---------*/
     .hideOnMobile{
         display: none ;
@@ -277,7 +341,7 @@ background-position: center;
     }
 
 .aboutSection{
-    padding: 128px 0px 128px 50px;
+    padding: 128px 70px 128px 50px;
 }
 
 .flexContainer{
