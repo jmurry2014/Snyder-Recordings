@@ -297,6 +297,9 @@ background-position: center;
 
 
 /* -----------------------------START OF CARD SECTION------------------------------*/
+.container{
+    overflow: hidden;
+}
 
 .swiper {
     min-height:450px;
@@ -308,6 +311,8 @@ background-position: center;
   }
 
   .swiper-wrapper{
+display: flex;
+align-items: center;
     max-width: 570px;
     min-height: 324px;
     font-family: "Inter", system-ui;
@@ -315,8 +320,8 @@ background-position: center;
 
   .swiper-slide{
     display:flex;
-    max-width: 570px;
-    max-height: 324px;
+    max-width: 300px;
+    max-height: 600px;
   }
   
   .inner-card{
@@ -326,6 +331,7 @@ background-position: center;
     padding: 68px 24px;
     background-color: #FFF !important;
   }
+
 .card-image{
     background-image: url(/assets/Images/71RLkNIuZNL._SY355_.jpg);
     min-width: 189px;
@@ -333,7 +339,10 @@ background-position: center;
     min-height: 188px;
     background-size: cover;
 }
+.rio{
+    background-image: url(/assets/Images/rio.webp);
 
+  }
 .card-content{
     display:flex;
     flex-direction: column;
@@ -363,6 +372,53 @@ background-position: center;
     text-align: center;
 
 }
+
+
+
+
+
+.button{
+display: flex;
+gap: 32px;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+margin: 40px;
+}
+/* Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #B8BFCF; /* Semi-transparent background */
+    border-radius: 50%; /* Circular buttons */
+    width: 68px;
+    height: 68px;
+    color: white; /* Icon color */
+    position: relative;
+    z-index: 10; /* Ensure they appear above slides */
+}
+
+
+
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+ content: url('/assets/Icons/Basic-Icons/Arrows\ Button\ Right.svg'); 
+    font-size: 18px; /* Adjust the size of the icon */
+}
+
+.swiper-button-prev:after {
+    content: url('/assets/Icons/Basic-Icons/Arrows\ Button\ Left.svg');
+  
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -426,7 +482,10 @@ background-position: center;
     width: 100%;
 }
 
-
+.swiper-slide{
+    max-width:570px;
+    max-height: 324px;
+}
 
 /* -----------------------------START OF CARD SECTION------------------------------*/
 
