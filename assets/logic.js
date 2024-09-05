@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", function() {
         freeMode:true,
         loop: true,
         spaceBetween: 32,
-        effect: 'coverflow', // Add Coverflow effect
-        coverflowEffect: {
-            rotate: 0, // Rotate the slides
-            stretch: 0, // Stretch the slides
-            depth: 100, // Depth of the slides
-            modifier: .3, // Multiplier effect
-            slideShadows: true, // Enable slide shadows
-        },
+        // effect: 'coverflow', // Add Coverflow effect
+        // coverflowEffect: {
+        //     rotate: 0, // Rotate the slides
+        //     stretch: 0, // Stretch the slides
+        //     depth: 100, // Depth of the slides
+        //     modifier: .3, // Multiplier effect
+        //     slideShadows: true, // Enable slide shadows
+        // },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -37,6 +37,29 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     });
+
+
+    let map;
+
+    async function initMap() {
+        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+      const { Map } = await google.maps.importLibrary("maps");
+    
+      map = new Map(document.getElementById("map"), {
+        center: { lat: 38.987122, lng: -94.668488 },
+        zoom: 15,
+        mapId: '6373bf33e2f283f2',
+      });
+      const marker = new AdvancedMarkerElement({
+        map,
+        position: { lat: 38.987122, lng: -94.668488 },
+    });
+    }
+    
+    initMap();
+
+
+
 });
 
 function showSideBar() {
@@ -52,5 +75,17 @@ function hideSideBar() {
         sidebar.css("display", "none");
     });
 }
+
+// GOOGLE MAPS API
+
+
+
+
+
+
+
+
+
+
 showSideBar();
 hideSideBar();
