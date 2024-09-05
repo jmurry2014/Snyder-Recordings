@@ -768,7 +768,7 @@ flex-direction: row;
 /* Large Desktops */
 @media (min-width: 1200px) {
     .hero-section::before {   /*using the ::before pseudo-element because i want the image to display before any other content in this section  */
-        background-image: url(assets\Images\DJ-large.png);
+        background-image: url(/assets/Images/DJ-large.png);
     }
 
 
@@ -824,7 +824,7 @@ flex-direction: row;
         }
         
         .nav-list .artists::before {
-            content: url(assets/Icons/Nav-Icons/People.svg);
+            content: url(/Icons/Nav-Icons/People.svg);
             display: inline-block;
         }
         
