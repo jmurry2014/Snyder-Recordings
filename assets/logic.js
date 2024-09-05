@@ -57,7 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     initMap();
-
+    $('form button').on("click",function(e){    
+        alert('Thank you for your submission!')
+        e.preventDefault();
+      
+    });
 
 
 });
