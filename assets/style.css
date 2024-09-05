@@ -432,10 +432,13 @@ margin-top: 60px;
 /* -----------------------------END OF CARD SECTION------------------------------*/
 
 
+.form-container{
+    margin: 0 auto;
 
+}
 .form-field {
     font-family: "Inter", system-ui;
-padding:32px
+padding:32px;
 }
 .form-field h3{
     margin-top: 64px;
@@ -490,6 +493,8 @@ textarea{
     border: 1px solid #9c9c9c;
     border-radius: 2px;
     max-height:144px;
+    font-family: "Inter", system-ui;
+    padding: 10px;
 }
 
 
@@ -622,7 +627,8 @@ text-align: left;
 form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 568px;
+    width: 568px;
+
 }
 textarea{
     height: 144px;
@@ -728,10 +734,12 @@ background-repeat: no-repeat;
 
 /* Extra Large Desktops */
 @media (min-width: 1440px) {
-    
-    
+ 
   
-    
+    form{
+max-width: none;
+width: 950px;
+}
     
     
     
