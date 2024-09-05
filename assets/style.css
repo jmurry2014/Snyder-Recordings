@@ -136,7 +136,7 @@ nav li a{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(assets/Images/DJ-small.png);
+    background-image: url(/assets/Images/DJ-small.png);
     background-size: cover;
     background-position: 30% ;
     background-repeat: no-repeat;
@@ -235,7 +235,7 @@ align-items: center;
     height: auto;
 }
 .about-img{
-    background-image: url(assets/Images/faiyaz-medium.png);
+    background-image: url(/assets/Images/faiyaz-medium.png);
   height: auto;
   width: 100%;
   margin: 0 auto;
@@ -351,14 +351,14 @@ align-items: center;
   }
 
 .card-image{
-    background-image: url(assets/Images/71RLkNIuZNL._SY355_.jpg);
+    background-image: url(/assets/Images/71RLkNIuZNL._SY355_.jpg);
     min-width: 189px;
     max-width: 200px;
     min-height: 188px;
     background-size: cover;
 }
 .rio{
-    background-image: url(assets/Images/rio.webp);
+    background-image: url(/assets/Images/rio.webp);
 
   }
 .card-content{
@@ -436,19 +436,19 @@ margin-top: 60px;
 }
 
 .swiper-button-prev:after {
-    background-image: url('assets/Icons/Basic-Icons/Arrows Button Left.svg');
+    background-image: url('/assets/Icons/Basic-Icons/Arrows Button Left.svg');
 }
 
 .swiper-button-next:after {
-    background-image: url('assets/Icons/Basic-Icons/Arrows Button Right.svg');
+    background-image: url('/assets/Icons/Basic-Icons/Arrows Button Right.svg');
 }
 
 .swiper-button-prev:hover:after {
-    background-image: url('assets/Icons/Basic-Icons/Arrows Button Left white.svg');
+    background-image: url('/assets/Icons/Basic-Icons/Arrows Button Left white.svg');
 }
 
 .swiper-button-next:hover:after {
-    background-image: url('assets/Icons/Basic-Icons/Arrows Button Right white.svg');
+    background-image: url('/assets/Icons/Basic-Icons/Arrows Button Right white.svg');
 }
 
 
@@ -625,7 +625,7 @@ footer .section{
 /* Tablets */
 @media (min-width: 996px) {
     .hero-section::before {   /*using the ::before pseudo-element because i want the image to display before any other content in this section  */
-        background-image: url(assets/Images/DJ-medium.png);
+        background-image: url(/assets/Images/DJ-medium.png);
     }
     
     .hideOnTablet{
@@ -741,7 +741,7 @@ form .form-button{
 }
 
 .form-image{
-background-image: url(assets/Images/harry-swales-0l0KjNoAfAk-unsplash.jpg);
+background-image: url(/assets/Images/harry-swales-0l0KjNoAfAk-unsplash.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -809,22 +809,22 @@ flex-direction: row;
         }
         
         .nav-list .home::before {
-            content: url(assets/Icons/Nav-Icons/Home.svg);
+            content: url(/assets/Icons/Nav-Icons/Home.svg);
             display: inline-block;
         }
         
         .nav-list .records::before {
-            content: url(assets/Icons/Nav-Icons/Record.svg);
+            content: url(/assets/Icons/Nav-Icons/Record.svg);
             display: inline-block;
         }
         
         .nav-list .music::before {
-            content: url(assets/Icons/Nav-Icons/Music\ Note.svg);
+            content: url(/assets/Icons/Nav-Icons/Music\ Note.svg);
             display: inline-block;
         }
         
         .nav-list .artists::before {
-            content: url(assets/Icons/Nav-Icons/People.svg);
+            content: url(/assets/Icons/Nav-Icons/People.svg);
             display: inline-block;
         }
         
