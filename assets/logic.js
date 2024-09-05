@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Initialize Swiper with Coverflow effect
     var swiper = new Swiper('.swiper', {
-        initialSlide:1,
+        initialSlide: 1,
         slidesPerView: 1,
-        freeMode:true,
+        freeMode: true,
         loop: true,
         spaceBetween: 32,
         // effect: 'coverflow', // Add Coverflow effect
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Customize for screens >= 480px
             },
             996: {
-                initialSlide:1,
+                initialSlide: 1,
                 slidesPerView: 'auto',
                 spaceBetween: 32,
                 loop: true,
@@ -43,19 +43,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     async function initMap() {
         const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-      const { Map } = await google.maps.importLibrary("maps");
-    
-      map = new Map(document.getElementById("map"), {
-        center: { lat: 38.987122, lng: -94.668488 },
-        zoom: 15,
-        mapId: '6373bf33e2f283f2',
-      });
-      const marker = new AdvancedMarkerElement({
-        map,
-        position: { lat: 38.987122, lng: -94.668488 },
-    });
+        const { Map } = await google.maps.importLibrary("maps");
+
+        map = new Map(document.getElementById("map"), {
+            center: { lat: 38.987122, lng: -94.668488 },
+            zoom: 15,
+            mapId: '6373bf33e2f283f2',
+        });
+        const marker = new AdvancedMarkerElement({
+            map,
+            position: { lat: 38.987122, lng: -94.668488 },
+        });
     }
-    
+
     initMap();
 
 
@@ -64,14 +64,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function showSideBar() {
     const sidebar = $('.sidebar');
-    $('.hamburger').click(function() {
+    $('.hamburger').click(function () {
         sidebar.css("display", "flex");
     });
 }
 
 function hideSideBar() {
     const sidebar = $('.sidebar');
-    $('.close').click(function() {
+    $('.close').click(function () {
         sidebar.css("display", "none");
     });
 }
