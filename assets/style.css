@@ -45,6 +45,7 @@ p.bodyStyle{
     display: none;
 }
 nav{
+    
     display:flex ;
     justify-content: space-between;
     max-height: 64px;
@@ -513,11 +514,67 @@ form .form-button{
 }
 
 
+footer{
+    font-family: "Inter", system-ui;
+    font-size:13px ;
+    font-weight: 500;
+    line-height: 24px;
+    padding-top:20px ;
+    background-color: #001D5D;
+}
+.top-footer{
+    display: grid;
+justify-content: center;
+text-align: center;
+border-bottom: 1px solid white;
+}
+footer ul{
+    padding: 0 20px;
+    list-style-type: none;
+    color: white;
+}
+footer ul:nth-child(5){
+    margin-bottom: 58px;
+}
+footer ul li:nth-child(1){
+    margin-top: 20px;
+}
+footer .section-one{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+footer .section{
+    font-size: 16px;
+    margin: 20px 0;
+
+}
+
+.lower-footer{
+    max-width: 1170px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower-footer .legal{
+    display: flex;
+    margin: 24px 0;
+    gap:24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+}
+
+.lower-footer .social-icons{
+    display: flex;
+    gap:20px
+
+}
 
 
 
-
-@media (max-width: 996px) { /* -------- THIS IS ONLY BEING USED TO EFFECTIVELY HIDE MY NAVIGATION BUTTON, RAN INTO ISSUE WHERE THE BUTTON WAS HIDING AT ALL BREAKPOINTS DUE TO THE BUTTON STYLE HAVING THE DISPLAY BLOCK VALUE    ---------*/
+@media (max-width: 1199px) { /* -------- THIS IS ONLY BEING USED TO EFFECTIVELY HIDE MY NAVIGATION BUTTON, RAN INTO ISSUE WHERE THE BUTTON WAS HIDING AT ALL BREAKPOINTS DUE TO THE BUTTON STYLE HAVING THE DISPLAY BLOCK VALUE    ---------*/
     .hideOnMobile{
         display: none ;
     }
@@ -653,7 +710,18 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 }
+ .top-footer{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: left;
+    width: 1170px;
+    margin: 0 auto;
+ }
 
+ .lower-footer{
+    margin: 0 auto;
+flex-direction: row;
+    justify-content: space-between;
+ }
   
 }
 
