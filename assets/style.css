@@ -136,7 +136,7 @@ nav li a{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/assets/Images/DJ-small.png);
+    background-image: url(assets/Images/DJ-small.png);
     background-size: cover;
     background-position: 30% ;
     background-repeat: no-repeat;
@@ -768,7 +768,7 @@ flex-direction: row;
 /* Large Desktops */
 @media (min-width: 1200px) {
     .hero-section::before {   /*using the ::before pseudo-element because i want the image to display before any other content in this section  */
-        background-image: url(/assets/Images/DJ-large.png);
+        background-image: url(assets\Images\DJ-large.png);
     }
 
 
@@ -809,22 +809,22 @@ flex-direction: row;
         }
         
         .nav-list .home::before {
-            content: url(/assets/Icons/Nav-Icons/Home.svg);
+            content: url(assets/Icons/Nav-Icons/Home.svg);
             display: inline-block;
         }
         
         .nav-list .records::before {
-            content: url(/assets/Icons/Nav-Icons/Record.svg);
+            content: url(assets/Icons/Nav-Icons/Record.svg);
             display: inline-block;
         }
         
         .nav-list .music::before {
-            content: url(/assets/Icons/Nav-Icons/Music\ Note.svg);
+            content: url(assets/Icons/Nav-Icons/Music\ Note.svg);
             display: inline-block;
         }
         
         .nav-list .artists::before {
-            content: url(/assets/Icons/Nav-Icons/People.svg);
+            content: url(assets/Icons/Nav-Icons/People.svg);
             display: inline-block;
         }
         
