@@ -809,27 +809,27 @@ flex-direction: row;
         }
         
         .nav-list .home::before {
-            content: url(assets/Icons/Nav-Icons/Home.svg);
+            content: url(/assets/Icons/Nav-Icons/Home.svg);
             display: inline-block;
         }
         
         .nav-list .records::before {
-            content: url(assets/Icons/Nav-Icons/Record.svg);
+            content: url(/assets/Icons/Nav-Icons/Record.svg);
             display: inline-block;
         }
         
         .nav-list .music::before {
-            content: url(assets/Icons/Nav-Icons/Music\ Note.svg);
+            content: url(/assets/Icons/Nav-Icons/Music\ Note.svg);
             display: inline-block;
         }
         
         .nav-list .artists::before {
-            content: url(/Icons/Nav-Icons/People.svg);
+            content: url(/assets/Icons/Nav-Icons/People.svg);
             display: inline-block;
         }
         
         .nav-list .concerts::before {
-            content: url(assets/Icons/Nav-Icons/Calendar.svg);
+            content: url(/assets/Icons/Nav-Icons/Calendar.svg);
             display: inline-block;
         }
         
