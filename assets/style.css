@@ -10,8 +10,9 @@
     }
 }
 .map-container{
+margin: 0 auto;
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
 }
 #map{
     min-width:100%;
@@ -431,6 +432,86 @@ margin-top: 60px;
 /* -----------------------------END OF CARD SECTION------------------------------*/
 
 
+
+.form-field {
+    font-family: "Inter", system-ui;
+padding:32px
+}
+.form-field h3{
+    margin-top: 64px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color:#001D5D;
+    text-align: center;
+}
+
+.form-field p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color:#777777;
+    text-align: center;
+    margin-top: 24px;
+}
+
+form{
+    display: flex;
+    flex-direction: column ;
+    gap:10px;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+}
+ form label{
+    font-family: 400;
+    font-size: 14px;
+    justify-content: start;
+    line-height: 20px;
+    color:#777777;
+    margin-top: 23px;
+ }
+ 
+ form input{
+    border: 1px solid #001D5D;
+    border-radius: 2px;
+    padding:16px 10px;
+ }
+select{
+
+    border: 1px solid #001D5D;
+    border-radius: 2px;
+    padding:16px 10px;
+    background-color: #FFF;
+
+}
+textarea{
+    border: 1px solid #9c9c9c;
+    border-radius: 2px;
+    max-height:144px;
+}
+
+
+form .form-button{
+    border: none;
+    height: 40px;
+    width: 100%;
+    min-width: 100px;
+    max-width: 168px;
+    font-family: "Inter", system-ui;
+    color:#42A418;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #D9F0D0;
+    margin: 32px auto;
+}
+
+
+
+
+
+
 @media (max-width: 996px) { /* -------- THIS IS ONLY BEING USED TO EFFECTIVELY HIDE MY NAVIGATION BUTTON, RAN INTO ISSUE WHERE THE BUTTON WAS HIDING AT ALL BREAKPOINTS DUE TO THE BUTTON STYLE HAVING THE DISPLAY BLOCK VALUE    ---------*/
     .hideOnMobile{
         display: none ;
@@ -520,6 +601,51 @@ text-align: left;
 }
 .description{
     text-align: left;
+}
+
+
+/* form styling */
+.form-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.form-field{
+    padding: 52px;
+}
+.form-field h3{
+    text-align: left;
+}
+.form-field p{
+    text-align: left;
+    max-width: 468px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 568px;
+}
+textarea{
+    height: 144px;
+}
+.field{
+    display:flex;
+    flex-direction: column;
+}
+
+.field:nth-child(5){
+  grid-column: 1/-1;
+}
+
+form .form-button{
+    margin: 0;
+    margin-top: 32px;
+}
+
+.form-image{
+background-image: url(/assets/Images/harry-swales-0l0KjNoAfAk-unsplash.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
   
