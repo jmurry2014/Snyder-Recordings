@@ -50,9 +50,18 @@ document.addEventListener("DOMContentLoaded", function () {
             zoom: 15,
             mapId: '6373bf33e2f283f2',
         });
-        const marker = new AdvancedMarkerElement({
+
+const pinView= new google.maps.marker.PinView({
+    background:'#42A418',
+    borderColor:'#42A418',
+    glyphColor:'#fff'
+  
+})
+
+        const markerView = new google.maps.marker.AdvancedMarkerView({
             map,
             position: { lat: 38.987122, lng: -94.668488 },
+            content:pinView.element
         });
     }
 
